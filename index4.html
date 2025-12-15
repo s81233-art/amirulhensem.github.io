@@ -52,6 +52,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Hover zoom effect */
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
     }
 
     .card h3 {
@@ -84,6 +91,10 @@
     }
 
     .hobby {
+      grid-column: span 1;
+    }
+
+    .reflection {
       grid-column: span 1;
     }
 
@@ -150,6 +161,7 @@
       .tech,
       .case-study,
       .hobby,
+      .reflection,
       .playlist {
         grid-column: span 1;
       }
@@ -168,9 +180,9 @@
           <p class="tagline">“Innovating sains tanaman.”</p>
         </div>
         <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">UMT Portal</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">UMT Portal</a>
         </div>
       </div>
 
@@ -204,6 +216,15 @@
       <div class="card hobby">
         <h3>Hobby</h3>
         <p>Evening walks at Pantai UMT</p>
+      </div>
+
+      <!-- Reflection -->
+      <div class="card reflection">
+        <h3>Why Food Tech Matters in Malaysia</h3>
+        <p>
+          Sustainable food security is crucial for our future. By optimizing
+          local processing methods, we can reduce waste and improve nutrition.
+        </p>
       </div>
 
       <!-- Playlist -->
